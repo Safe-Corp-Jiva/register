@@ -1,0 +1,14 @@
+{
+  "Username": "Tester",
+  "Password": "Password123",
+  "PhoneConfig": {
+    "PhoneType": "SOFT_PHONE",
+    "AutoAccept": true
+  },
+  "SecurityProfileIds": ["Agent"],
+  "RoutingProfileId": "Basic Routing Profile",
+  "IdentityInfo": {
+    "FirstName": "Test",
+    "LastName": "User"
+  }
+}
