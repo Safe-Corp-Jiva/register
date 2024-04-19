@@ -12,7 +12,7 @@ from entry import handler
 
 class TestHandler(unittest.TestCase):
   def test_handler(self):
-    with open("test/event.json", "r") as f:
+    with open("./test/event.json", "r") as f:
       event = json.load(f)
 
     response = handler(event, None)
