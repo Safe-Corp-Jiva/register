@@ -1,4 +1,5 @@
 # Local test script to test the handler function with a sample event.
+from datetime import datetime
 import json
 import unittest
 
@@ -14,6 +15,7 @@ class TestHandler(unittest.TestCase):
   def test_handler(self):
     with open("./test/event.json", "r") as f:
       event = json.load(f)
+      event["Username"] = f"Tester-{datetime.timestamp(datetime.now())}"
 
     response = handler(event, None)
     self.assertIsNotNone(response, msg="Received None response")
